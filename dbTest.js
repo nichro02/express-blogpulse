@@ -22,7 +22,47 @@ db.article.create({
   console.log(article.get())
 })
 */
-
+/*
+db.article.create({
+    title: 'NEW ARTICLE',
+    content: 'Hello, world',
+    authorId: 1
+  })
+.then(function(article) {
+    console.log(article.get())
+})
+*/
+/*
+db.author.create({
+    firstname: 'Bob',
+    lastname: 'Ross',
+    bio: 'I enjoy painting soothing landscapes and writing zen code'
+})
+.then(function(author) {
+    console.log(author.get())
+})
+*/
+/*
+db.author.create({
+    firstname: 'Steve',
+    lastname: 'Jobs',
+    bio: 'Writing from the cloud'
+})
+.then(function(author) {
+    console.log(author.get())
+})
+*/
+/*
+db.comment.create({
+    name: 'John Doe',
+    content: 'test comment',
+    articleId: 4
+})
+.then(function(comment) {
+    console.log(comment.get())
+})
+*/
+/*
 db.article.findOne({
     where: { id: 1 },
     include: [db.comment]
@@ -30,4 +70,4 @@ db.article.findOne({
     // by using eager loading, the article model should have a comments key
     console.log(article.comments)
   })
- 
+ */
