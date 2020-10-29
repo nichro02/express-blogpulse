@@ -37,8 +37,7 @@ router.get('/:id', (req, res) => {
   .then((article) => {
     if (!article) throw Error()
     console.log(article.author)
-    console.log('ARTICLE OBJECT --->',article)
-    console.log('COMMENTS', article.comments.comment)
+    //console.log('ARTICLE OBJECT --->',article)
     res.render('articles/show', { article: article })
   })
   .catch((error) => {
