@@ -20,10 +20,10 @@ router.post('/', (req, res) => {
     })
       
 })
-
+/*
 router.get('/', (req, res) => {
     res.send('THIS IS THE COMMENT POST ROUTE')
 })
-
+*/
 
 module.exports = router

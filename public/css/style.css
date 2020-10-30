@@ -2,3 +2,48 @@
   width: 100%;
   height: auto;
 }
+
+body{
+  background-color: yellow;
+  color: darkgreen;
+}
+
+.comment {
+  border-color: darkgreen;
+  border-style: groove;
+  border-width: 1px;
+  padding: 10px;
+  margin: 5px;
+}
+
+.title {
+  text-align: left;
+  
+}
+
+.byline {
+  text-size-adjust: 75%;
+}
+
+button, input, .btn-primary {
+  background-color: green;
+  margin: 10px 0 10px 0;
+}
+
+.well {
+  background-color: white;
+}
+
+h2, p, a, li, ul, small {
+  color: darkgreen;
+}
+
+.btn-primary, input {
+  color: white;
+}
+
+h1 {
+  text-align: center;
+}
+
+

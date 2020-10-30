@@ -1,5 +1,5 @@
-<h1><%= article.title %> <small>by <%= article.author.getFullName() %></small></h1>
-
+<h1 class="title"><%= article.title %></h1>
+<h2 class="byline">By <%= article.author.getFullName() %></h2>
 <p>
   <strong><%= moment(article.createdAt).calendar() %></strong>
 </p>
@@ -9,8 +9,11 @@
 <h3>Comments</h3>
 <%article.comments.forEach(comment => {%>
   <!--TEST TO SEE IF COMMENT.COMMENT DISPLAYS COMMENT-->
-  <strong><p><%=comment.dataValues.name%></p></strong>
-  <p><%=comment.dataValues.content%></p>
+  <div class = "comment">
+    <strong><p><%=comment.dataValues.name%></p></strong>
+    <p><%=comment.dataValues.content%></p>
+  </div>
+  
   
 <%})%>
 
